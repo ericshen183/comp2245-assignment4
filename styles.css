@@ -33,9 +33,20 @@ form {
     margin-left: 25%;
     align-items: center;
     justify-content: space-between;
+    h3 {
+        color: black;
+    }
 }
 
 #result {
+    h3 {
+        text-transform: uppercase;
+        font-size: larger;
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
     margin-left: 25%;
 }
 
@@ -60,4 +71,16 @@ button:hover {
 
 h2 {
     font-size: 36;
+}
+
+h3 {
+    font-size: larger;
+}
+
+span{
+    h3 {
+        font-size: large;
+        color: darkred;
+
+    }
 }
