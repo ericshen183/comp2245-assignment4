@@ -78,7 +78,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET"){
                 break;
             }
             else{
-                $result= "<span>Superhero not found </span>";
+                $result= "<span><h3>Superhero not found </h3></span>";
             }
         }
         echo $result;
