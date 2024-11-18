@@ -68,10 +68,10 @@ $superheroes = [
 <?php 
 if ($_SERVER["REQUEST_METHOD"] == "GET"){
     $result;
-    $cleanedReq = ucwords(trim(filter_var($_GET["query"], FILTER_SANITIZE_STRING)));
-    if (isset($cleanedReq) && !empty($cleanedReq)){
+    $cleanedQuery = ucwords(trim(filter_var($_GET["query"], FILTER_SANITIZE_STRING)));
+    if (isset($cleanedQuery) && !empty($cleanedQuery)){
         for($sup=0; $sup < count($superheroes); $sup++){
-            if (  $superheroes[$sup]['name'] == $cleanedReq  ||  $superheroes[$sup]['alias']  == $cleanedReq ) {
+            if (  $superheroes[$sup]['name'] == $cleanedQuery  ||  $superheroes[$sup]['alias']  == $cleanedQuery ) {
                 $result = "<h3> {$superheroes[$sup]['alias']} </h3> 
                 <h4> A.K.A {$superheroes[$sup]['name']} </h4> 
                 <p>{$superheroes[$sup]['biography']} </p>";
